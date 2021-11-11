@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+<div class="detector">
+    <h3>You Pressed</h3>
+    <div class="presedkey">
+        Shift
+    </div>
+</div>
+
+
+
+</body>
+<script>
+    document.addEventListener("keydown" , (e)=>{
+    document.querySelector(".presedkey").innerHTML = e.code;
+})
+</script>
+</html>
